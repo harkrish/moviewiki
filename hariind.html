@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   body {
+  font-family: Arial;
+  }
+* {
+  box-sizing: border-box;
+}
+div.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+div.example input[type=submit] {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+div.example input[type=submit]:hover {
+  background: #0b7dda;
+}
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+  <title>MovieWiki</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="hariind.css" rel="stylesheet">
+
+</head>
+
+<body>
+ <center>
+    <h1><br><br><br><a  href="hariind.html"> Welcome to MovieWiki</a></h1>
+    <div class="example" style="margin:auto;max-width:350px">
+    <input type="text" id="1" placeholder="Search movie" name="click">
+  <input type="submit" onclick="search()" value="Search"></div>
+  <div id="root"></div>
+
+  <script src="hariind.js"></script>
+</body>
+
+</html>
